@@ -18,5 +18,5 @@ A  *proof of concept* for a blog using [Next.js](https://nextjs.org/) and the ne
 ### To dos:
 
 - [ ] Add support for nested blocks.
-- [ ] Format dates
-- [ ] Figure out how create custom slugs 🐌 
+- [ ] Format dates.
+- [ ] Figure out how create custom slugs. 🐌 
