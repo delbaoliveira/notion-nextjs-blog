@@ -1,4 +1,4 @@
-A  *proof of concept* for a blog using [Next.js](https://nextjs.org/) and the new [Notion API](https://developers.notion.com/).  
+A  *proof of concept* for a blog using [Next.js](https://nextjs.org/) and the new [Notion API](https://developers.notion.com/). ✨
 
 ### How it works:
 1. Blog posts are stored as Notion pages in a [database (full page table)](https://www.notion.so/d759219987664088a6030440b8cf7225?v=341342e466484779be4a130021f0ed01).
@@ -19,3 +19,4 @@ A  *proof of concept* for a blog using [Next.js](https://nextjs.org/) and the ne
 
 - [ ] Add support for nested blocks.
 - [ ] Format dates
+- [ ] Figure out how create custom slugs 🐌 
