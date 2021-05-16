@@ -8,21 +8,26 @@ export const getStaticProps = async () => {
 
 export default function Home({ posts }) {
   return (
-    <div>
-      <div>
-        {posts.map((post) => {
-          return (
-            <div key={post.id}>
-              {/* Clean up this crazy dot notation and format the data please girl */}
+    <div className="container mx-auto py-12 space-y-6">
+      <h1 className="text-6xl font-bold">Blog</h1>
+
+      {posts.map((post) => {
+        return (
+          <div key={post.id}>
+            <h2 className="text-2xl font-medium">
               <Link href={`/posts/${post.id}`}>
-                <a>{post.properties.Name.title[0].plain_text}</a>
+                <a className="no-underline hover:text-gray-600">
+                  {post.properties.Name.title[0].plain_text}
+                </a>
               </Link>
-              <p>{post.properties.Date.date.start}</p>
-              <p>{post.properties.Category.select.name}</p>
-            </div>
-          )
-        })}
-      </div>
+            </h2>
+            <ul>
+              <li>Date: {post.properties.Date.date.start}</li>
+              <li>Category: {post.properties.Category.select.name}</li>
+            </ul>
+          </div>
+        )
+      })}
     </div>
   )
 }
