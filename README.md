@@ -17,4 +17,5 @@ A  *proof of concept* for a blog using [Next.js](https://nextjs.org/) and the ne
 
 ### To dos:
 
-- [ ] Add support for nested blocks such as indented paragraphs or lists. 
+- [ ] Add support for nested blocks.
+- [ ] Format post dates
