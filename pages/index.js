@@ -3,7 +3,10 @@ import Link from "next/link"
 
 export const getStaticProps = async () => {
   const posts = await getPostList(process.env.DATABASE_ID)
-  return { props: { posts } }
+  return {
+    props: { posts },
+    revalidate: 60,
+  }
 }
 
 export default function Home({ posts }) {

@@ -14,7 +14,10 @@ export async function getStaticPaths() {
 export const getStaticProps = async ({ params: { id } }) => {
   const post = await getPost(id)
   const blocks = await getBlocks(id)
-  return { props: { post, blocks } }
+  return {
+    props: { post, blocks },
+    revalidate: 1800,
+  }
 }
 
 export default function Post({ post, blocks }) {
