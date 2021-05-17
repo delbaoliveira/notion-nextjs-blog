@@ -16,7 +16,7 @@ export default function Home({ posts }) {
           <div key={post.id}>
             <h2 className="text-2xl font-medium">
               <Link href={`/posts/${post.id}`}>
-                <a className="no-underline hover:text-gray-600">
+                <a className="hover:text-gray-600">
                   {post.properties.Name.title[0].plain_text}
                 </a>
               </Link>
