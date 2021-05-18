@@ -19,5 +19,5 @@ A  *proof of concept* for a blog using [Next.js](https://nextjs.org/) and the ne
 
 - [ ] Add support for nested blocks.
 - [ ] Format dates.
-- [ ] Sort posts by dates.
+- [ ] Sort posts by published date.
 - [ ] Figure out how create custom slugs. 🐌 
